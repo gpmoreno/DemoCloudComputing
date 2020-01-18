@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +26,9 @@
       <div class="row">
         <div class="col-md-12">
           <h2>Estudiantes</h2>
-          <?php echo"hola mundo"?>
+          <?php 
+            include '../database/connection.php'
+          ?>
         </div>
       </div>
       <hr />
@@ -54,4 +54,3 @@
     ></script>
   </body>
 </html>
->>>>>>> 48fda410b4e36a461cf3501712c9bc5a4e44e01d
