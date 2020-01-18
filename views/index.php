@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,7 +30,7 @@
         </div>
       </div>
       <hr />
-      <button type="button" class="btn btn-primary">Crear nuevo</button>
+      <a href="../views/nuevo.php" type="button" class="btn btn-primary">Crear nuevo</a>
     </div>
 
     <!-- Optional JavaScript -->
@@ -54,4 +52,3 @@
     ></script>
   </body>
 </html>
->>>>>>> 48fda410b4e36a461cf3501712c9bc5a4e44e01d

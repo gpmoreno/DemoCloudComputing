@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
-    $username = "springstudent";
-    $password = "springstudent";
+    $username = "root";
+    $password = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
