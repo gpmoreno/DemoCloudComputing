@@ -20,6 +20,6 @@
         echo "Error: " . $queryText . "<br>" . $conn->error;
     }
 
-
     $conn->close();
+    header('location:../views/index.php')
 ?>
