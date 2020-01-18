@@ -1,70 +1,63 @@
-<html>
-<link
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-<form class="form-horizontal">
 
-<fieldset>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Agregar alumnos</title>
+</head>
+<body>
+<div class="container">
+  <h2>Agregar alumnos</h2>
+  <hr>
+  <form action="../controller/alumnosInsert.php" method="POST">
+    <!-- Text input-->
+    <div class="form-group">
+      <label>C.I</label>
+      <input name="cedula" type="text" class="form-control">
+    </div>
 
-<!-- Form Name -->
-<legend>Nuevo Alumno</legend>
+    <!-- Text input-->
+    <div class="form-group">
+      <label>Nombre</label>
+      <input name="nombre" type="text" class="form-control">
+    </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Cédula</label>  
-  <div class="col-md-5">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-    
-  </div>
+    <!-- Text input-->
+    <div class="form-group">
+      <label>Edad</label>
+      <input name="edad" type="number" class="form-control">
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label>Telefono</label>
+      <input name="telefono" type="text" class="form-control">
+    </div>
+
+    <input type="submit" name="submit" class="btn btn-success" value="Crear">
+    <a href="../views/index.php" type="button" class="btn btn-danger">Cancelar</a>
+  </form>
 </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Edad</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Teléfono</label>  
-  <div class="col-md-5">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Nombre</label>  
-  <div class="col-md-5">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="singlebutton"></label>
-  <div class="col-md-4">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
-  </div>
-</div>
-
-</fieldset>
-</form>
-</div>
-</div>
-</div>
-<script
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
@@ -79,4 +72,5 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    </html>
+</body>
+</html>

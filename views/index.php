@@ -57,8 +57,6 @@
         $result = $conn->query($sql);
         // output data of each row
         while($row = $result->fetch_assoc()) {
-          
-        $conn->close();
         ?>
           <td><?php echo $row["id"] ?></td>
           <td><?php echo $row["cedula"] ?></td>
