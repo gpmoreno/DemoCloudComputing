@@ -19,52 +19,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Agregar estudiante</title>
+  <title>Agregar alumnos</title>
 </head>
 <body>
 <div class="container">
-  <h2>Agregar Alumnos</h2>
+  <h2>Agregar alumnos</h2>
   <hr>
-  <form>
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Cédula</label>  
-  <div class="col-md-5">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  </div>
-</div>
+  <form action="../controller/alumnosInsert.php" method="POST">
+    <!-- Text input-->
+    <div class="form-group">
+      <label>C.I</label>
+      <input name="cedula" type="text" class="form-control">
+    </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Edad</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  </div>
-</div>
+    <!-- Text input-->
+    <div class="form-group">
+      <label>Nombre</label>
+      <input name="nombre" type="text" class="form-control">
+    </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Teléfono</label>  
-  <div class="col-md-5">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  </div>
-</div>
+    <!-- Text input-->
+    <div class="form-group">
+      <label>Edad</label>
+      <input name="edad" type="number" class="form-control">
+    </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Nombre</label>  
-  <div class="col-md-5">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  </div>
-</div>
+    <!-- Text input-->
+    <div class="form-group">
+      <label>Telefono</label>
+      <input name="telefono" type="text" class="form-control">
+    </div>
 
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="singlebutton"></label>
-  <div class="col-md-4">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
-  </div>
-</div>
+    <input type="submit" name="submit" class="btn btn-success" value="Crear">
+    <a href="../views/index.php" type="button" class="btn btn-danger">Cancelar</a>
   </form>
 </div>
 
