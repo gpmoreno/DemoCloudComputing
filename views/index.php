@@ -31,11 +31,12 @@
       </div>
       <hr />
       <a href="../views/nuevo.php" type="button" class="btn btn-primary">Crear nuevo</a>
-    </div>
+    
     <legend>Registros</legend>
-    <table>
+    <table class="table table-striped">
         <tr>
             <td>Nombre</td>
+            <td>Cédula</td>
         </tr>
         <tr>
         <?php
@@ -48,6 +49,7 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 echo "<td>". $row["nombre"]. "</td>";
+                echo "<td>". $row["cedula"]. "</td>";
             }
         } else {
             echo "0 results";
@@ -56,6 +58,7 @@
         ?>
         </tr>
     </table>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
