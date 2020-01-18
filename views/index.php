@@ -27,12 +27,15 @@
         <div class="col-md-12">
           <h2>Estudiantes</h2>
           <?php 
-            include '../database/connection.php'
+            include '../database/connection.php';
+            $sql = "SELECT * FROM ALUMNOS";
+            $result = $conn->query($sql);
           ?>
+
         </div>
       </div>
       <hr />
-      <button type="button" class="btn btn-primary">Crear nuevo</button>
+      <a href="../views/nuevo.php" type="button" class="btn btn-primary">Crear nuevo</a>
     </div>
 
     <!-- Optional JavaScript -->

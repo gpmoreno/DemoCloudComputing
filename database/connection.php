@@ -2,9 +2,10 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
+    $dataBase = "cp_escolastico";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dataBase);
 
 
 // Check connection
