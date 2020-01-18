@@ -19,4 +19,7 @@
     } else {
         echo "Error: " . $queryText . "<br>" . $conn->error;
     }
+
+
+    $conn->close();
 ?>
