@@ -49,7 +49,6 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
         <?php
         include("../database/connection.php"); 
       
@@ -58,6 +57,7 @@
         // output data of each row
         while($row = $result->fetch_assoc()) {
         ?>
+        <tr>
           <td><?php echo $row["id"] ?></td>
           <td><?php echo $row["cedula"] ?></td>
           <td><?php echo $row["nombre"] ?></td>
@@ -67,9 +67,9 @@
             <a href="">Editar</a>
             <a href="../views/eliminar.php?id=<?php echo $row["id"] ?>">Eliminar</a>
           </td>
-        
-        <?php } ?>
         </tr>
+        <?php } ?>
+        
       </tbody>
     </table>
     </div>
