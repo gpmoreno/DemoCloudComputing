@@ -41,6 +41,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
+            <td>Id</td>
             <td>Cédula</td>
             <td>Nombre</td>
             <td>Edad</td>
@@ -59,13 +60,14 @@
           
         $conn->close();
         ?>
+          <td><?php echo $row["id"] ?></td>
           <td><?php echo $row["cedula"] ?></td>
           <td><?php echo $row["nombre"] ?></td>
           <td><?php echo $row["edad"] ?></td>
           <td><?php echo $row["telefono"] ?></td>
           <td>
             <a href="">Editar</a>
-            <a href="">Eliminar</a>
+            <a href="../views/eliminar.php?id=<?php echo $row["id"] ?>">Eliminar</a>
           </td>
         
         <?php } ?>
