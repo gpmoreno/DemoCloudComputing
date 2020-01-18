@@ -65,7 +65,7 @@
           <td><?php echo $row["telefono"] ?></td>
           <td>
             <a href="">Editar</a>
-            <a href="../views/eliminar.php?id=<?php echo $row["id"] ?>">Eliminar</a>
+            <a type="button" class="btn btn-danger" href="../views/eliminar.php?id=<?php echo $row["id"] ?>">Eliminar</a>
           </td>
         </tr>
         <?php } ?>
