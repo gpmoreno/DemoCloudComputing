@@ -39,29 +39,38 @@
     
     <legend>Registros</legend>
     <table class="table table-striped">
+      <thead>
         <tr>
-            <td>Nombre</td>
             <td>Cédula</td>
+            <td>Nombre</td>
+            <td>Edad</td>
+            <td>Telefono</td>
         </tr>
+      </thead>
+      <tbody>
         <tr>
         <?php
         include("../database/connection.php"); 
       
         $sql = "SELECT * FROM alumnos";
         $result = $conn->query($sql);
-        
-        if ($result->num_rows > 0) {
-            // output data of each row
-            while($row = $result->fetch_assoc()) {
-                echo "<td>". $row["nombre"]. "</td>";
-                echo "<td>". $row["cedula"]. "</td>";
-            }
-        } else {
-            echo "0 results";
-        }
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+          
         $conn->close();
         ?>
+          <td><?php echo $row["cedula"] ?></td>
+          <td><?php echo $row["nombre"] ?></td>
+          <td><?php echo $row["edad"] ?></td>
+          <td><?php echo $row["telefono"] ?></td>
+          <td>
+            <a href="">Editar</a>
+            <a href="">Eliminar</a>
+          </td>
+        
+        <?php } ?>
         </tr>
+      </tbody>
     </table>
     </div>
     <!-- Optional JavaScript -->
