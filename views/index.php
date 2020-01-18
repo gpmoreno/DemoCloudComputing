@@ -37,7 +37,30 @@
       <hr />
       <a href="../views/nuevo.php" type="button" class="btn btn-primary">Crear nuevo</a>
     </div>
-
+    <legend>Registros</legend>
+    <table>
+        <tr>
+            <td>Nombre</td>
+        </tr>
+        <tr>
+        <?php
+        include("../database/connection.php"); 
+      
+        $sql = "SELECT * FROM alumnos";
+        $result = $conn->query($sql);
+        
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo "<td>". $row["nombre"]. "</td>";
+            }
+        } else {
+            echo "0 results";
+        }
+        $conn->close();
+        ?>
+        </tr>
+    </table>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
