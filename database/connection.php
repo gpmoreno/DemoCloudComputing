@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
-    $username = "springstudent";
-    $password = "springstudent";
+    $username = "root";
+    $password = "";
     $dataBase = "cp_escolastico";
 
 // Create connection
